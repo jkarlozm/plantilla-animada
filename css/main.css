@@ -1,0 +1,306 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 1.4em;
+	line-height: 1.6em; /*Interlineado*/
+}
+body > section{ /*Aplicado a todos los section principales (Selector ">")*/
+	padding: 50px 0;
+	clear: both; /*Mantener los section uno debajo del otro*/
+}
+.azulbg{background-color: #123156;}
+.grisbg{background-color: #f5f5f5;}
+h1, h2{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+h1{
+	color: #0c243d;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 2.4em;
+}
+h2{
+	color: #0c243d;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1.4em;
+}
+h2.parallax{
+	font-size: 3.6em;
+	font-weight: 700;
+	text-transform: none;
+	color: #fff;
+	text-shadow: 0 7px 8px black;
+}
+.separador{
+	width: 40px;
+	height: 4px;
+	display: block;
+	margin: 0 auto;
+	background-color: #0c243d;
+	margin-bottom: 30px;
+}
+/* ==========================================================================
+    #App
+   ========================================================================== */
+section#app .social{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: #123156;
+	margin: 0 auto;
+	line-height: 180px;	
+}
+section#app .social i{
+	color: #fff;
+	font-size: 3em;
+}
+/* ==========================================================================
+    #Caracteristicas
+   ========================================================================== */
+section#caracteristicas p{
+	font-size: .9em;
+	color: #858585;
+}
+section#caracteristicas .caracteritica{
+	margin-bottom: 30px;
+	clear: both;
+}
+section#caracteristicas .icon{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background-color: #123156;
+	margin-bottom: 10px;
+	line-height: 140px;
+	text-align: center;
+}
+section#caracteristicas .icon i{
+	color: #fff;
+	font-size: 2.6em;
+}
+section#caracteristicas section img{
+	margin: 0 auto;	
+}
+/* ==========================================================================
+    #Descargar
+   ========================================================================== */
+section#descargar div.contenidoDescarga{
+	height: 700px;	
+}
+section#descargar div.descarga{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	top: 50px;
+}
+section#descargar div.derechaVacio{
+	width: 50%;
+	background-color: #f5f5f5;
+	float: right;
+	height: 100%;
+	z-index: 2;
+	background-image: url(../img/ip1.png);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-size: 300px 370px;
+}
+section#descargar div.extra{
+	padding: 0;
+	position: relative;
+}
+section#descargar div.phone{
+	width: 50%;
+	float: left;
+	height: 100%;
+	box-shadow: inset -7px -7px 12px -2px rgba(0,0,0,.15) ;/*Sombra hacia adentro*/
+	z-index: 1;
+	text-align: center;
+}
+section#descargar div.phone img{
+	max-width: 100%;
+	max-height: 95%;	
+}
+section#descargar .plataformas > div{
+	border-radius: 20px;
+	border: 3px solid #0c243d;
+	padding: 11px 0;
+	font-size: 1.2em;
+	position: relative;
+	padding-left: 50px;
+	color: #0c243d;
+}
+section#descargar .plataformas > div i{
+	font-size: 2.5em;
+	position: absolute;
+	left: 20px;
+	top: 5px;
+}
+section#descargar .plataformas > div span{font-weight: bold;}
+
+/* ==========================================================================
+    #Menu
+   ========================================================================== */
+.navbar-inverse{
+	box-shadow: none;
+	border: none;	
+	padding-top: 10px;
+}
+.nav>li>a{
+	text-transform: uppercase;
+	font-family: 'Roboto Condensed', sans-serif;;
+	color: #fff;
+	font-size: 1.3em;
+}
+.nav>li>a:hover, .nav>li>a:focus{
+	background-color: transparent;
+}
+.efecto{/*Animación menú*/
+	min-height: 30px;
+	box-shadow: 0 0 10px black;
+	padding-top: 0;
+	transition: 1s all ease;
+}
+.normal{/*Animación Menú*/
+	transition: 1s all ease;
+}
+/* ==========================================================================
+    #Pantallas
+   ========================================================================== */
+div.modal-body{
+	text-align: center;	
+}
+div.modal-body img{
+	max-height: 600px;
+}
+section#pantallas a img{
+	max-width: 400px;
+	max-height: 300px;
+	margin: 0 auto;
+}
+
+/* ==========================================================================
+    #Parallax
+   ========================================================================== */
+section#parallax{
+	height: 500px;
+	background: url(../img/ipad.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+/* ==========================================================================
+    #Principal
+   ========================================================================== */
+section#principal{
+	max-height: 700px;
+	padding-top: 100px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e3d5a+0,0c223b+100 */
+	background: #1e3d5a; /* Old browsers */
+	background: -moz-linear-gradient(top, #1e3d5a 0%, #0c223b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e3d5a), color-stop(100%,#0c223b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #1e3d5a 0%,#0c223b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1e3d5a 0%,#0c223b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #1e3d5a 0%,#0c223b 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #1e3d5a 0%,#0c223b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3d5a', endColorstr='#0c223b',GradientType=0 ); /* IE6-9 */
+}
+section#principal img{
+	max-width: 70%;
+}
+/* ==========================================================================
+    #Soporte
+   ========================================================================== */
+section#soporte h1, p{
+		color: #fff;
+}
+section#soporte div.separador{
+		background-color: #fff;
+}
+section#soporte p{
+		font-size: 1.6em;
+}
+section#soporte form input, section#soporte form textarea{
+	color: #fff;
+}
+/*Color letra placeholder*/
+::-webkit-input-placeholder{
+	color: #fff !important;
+}
+:moz-placeholder{
+	color: #fff; /*Versiones muy antiguas de firefox*/
+}
+::moz-placeholder{
+	color: #fff;
+}
+
+#correcto{display: none;}
+
+/* ==========================================================================
+    Animaciones
+   ========================================================================== */
+.anima1, .anima2, .anima3, img#app-central, img#animaimg{opacity: 0;}
+.anima2{
+	animation-delay: .3s;
+	-webkit-animation-delay: .3s;
+}
+.anima3{
+	animation-delay: .6s;
+	-webkit-animation-delay: .6s;
+}
+
+/* ==========================================================================
+    #MediaQuery
+   ========================================================================== */
+@media(max-width: 767px){
+	section#principal{
+		height: auto;
+		min-height: initial;
+	}
+	section#caracteristicas .caracteristicas{
+		min-height: 150px;
+		text-align: center;
+	}
+	section#descargar .plataformas > div{
+		margin-bottom: 20px;
+		padding: 21px 0;		
+	}
+	section#descargar div.phone{
+		height: auto;
+	}
+	section#descarga div.contenidoDescarga{
+		height: auto;
+	}
+	section#parallax{
+		background-attachment: scroll; /*Para dispositivos que no soportar el fixed*/
+	}
+}
+@media(max-width: 500px){
+	section#descargar div.phone{
+		width: 100%;
+	}
+	section#caracteristicas > section.col-xs-6{
+		width: 100% !important;
+	}
+	section#caracteristicas > .col-xs-6{
+		width: 100%;
+	}
+	section#caracteristicas .caracteristica{
+		min-height: initial;
+		text-align: center;
+	}
+	section#caracteristicas .icon{
+		display: none;
+	}
+	section#descargar div.derechaVacio{
+		display: none;
+	}
+	section#descargar .descarga{
+		position: relative;
+	}
+	section#descargar .col-xs-offset-6{
+		width: 100%;
+		margin: 0;
+	}
+}
